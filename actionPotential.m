@@ -23,7 +23,6 @@ n(1) = alpha_n(V)/(alpha_n(V)+beta_n(V)); %initial n m h
 m(1) = alpha_m(V)/(alpha_m(V)+beta_m(V));
 h(1) = alpha_h(V)/(alpha_h(V)+beta_h(V));
 
-
 for i = 1:sizeTime 
     dndt = @(n) alpha_n(V(i))*(1-n)-beta_n(V(i))*n;
     dmdt = @(m) alpha_m(V(i))*(1-m)-beta_m(V(i))*m;
