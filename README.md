@@ -5,3 +5,5 @@ This is an action potential model written in MATLAB as a project for one of my c
 actionPotential.m contains the source code for generating the action potential with conductance constants and ionic currents.
 
 refractory.m contains source code for modeling the AP response in the relative and absolute refractory period of the action potential.
+
+RK.m is the Runge-Kutta algorithm for solving differental equations.
