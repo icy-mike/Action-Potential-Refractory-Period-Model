@@ -6,4 +6,7 @@ actionPotential.m contains the source code for generating the action potential w
 
 refractory.m contains source code for modeling the AP response in the relative and absolute refractory period of the action potential.
 
-RK.m is the Runge-Kutta algorithm for solving differental equations.
+RK.m is one iteration of the Runge-Kutta algorithm for solving differental equations.
+
+
+-Michael Nguyen
