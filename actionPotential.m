@@ -7,10 +7,10 @@ dt = 0.05; %test interval
 sizeTime = time/dt; %array size
 
 %constants
-I_m = 14; %current stimulation
-C_m = 1;
-g_K = 36; g_Na = 120; g_L = 0.3;
-V_K = -12; V_Na = 115; V_L = 10.5989;
+I_m = 14; %current stimulation, uA/cm^2
+C_m = 1; %membrane capacitance, uF/cm^2
+g_K = 36; g_Na = 120; g_L = 0.3; %max ionic leakage conductance, mmho/cm^2
+V_K = -12; V_Na = 115; V_L = 10.5989; %Nernst potentials (offset from resting voltage), mV
 
 alpha_n = @(V) [-0.01*V+0.1]/[exp(-0.1*V+1)-1];
 beta_n = @(V) 0.125*exp(-0.0125*V);
@@ -44,7 +44,7 @@ end
 t = 0:dt:time;
 t1 = t(100:500);
 figure(1)
-plot(t,V);
+plot(t,-70+V);
 % hold on
 % plot(t(1:5000),INa*50);
 xlabel('Time (ms)')
